@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Amigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="bg-orange-500 p-4 text-white flex justify-between">
+        <h1 class="text-2xl font-bold">PetShop Amigo</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#servicos" class="hover:underline">Serviços</a></li>
+            <li><a href="#galeria" class="hover:underline">Galeria</a></li>
+            <li><a href="#contato" class="hover:underline">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Banner -->
+    <header class="bg-cover bg-center h-64 flex items-center justify-center text-white text-3xl font-bold" style="background-image: url('https://source.unsplash.com/1600x900/?pet');">
+        O melhor para o seu pet!
+    </header>
+    
+    <!-- Serviços -->
+    <section id="servicos" class="text-center py-10">
+        <h2 class="text-3xl font-bold">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-6">
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Banho e Tosa</h3>
+                <p>Deixe seu pet sempre limpinho e cheiroso!</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Consulta Veterinária</h3>
+                <p>Atendimento especializado para seu pet.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Loja de Acessórios</h3>
+                <p>Brinquedos, roupas e muito mais para seu pet.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galeria -->
+    <section id="galeria" class="text-center py-10 bg-gray-200">
+        <h2 class="text-3xl font-bold">Galeria</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-6">
+            <img src="https://source.unsplash.com/300x200/?dog" class="rounded-lg shadow-md" alt="Pet 1">
+            <img src="https://source.unsplash.com/300x200/?cat" class="rounded-lg shadow-md" alt="Pet 2">
+            <img src="https://source.unsplash.com/300x200/?rabbit" class="rounded-lg shadow-md" alt="Pet 3">
+        </div>
+    </section>
+    
+    <!-- Contato -->
+    <section id="contato" class="text-center py-10">
+        <h2 class="text-3xl font-bold">Fale Conosco</h2>
+        <form class="mt-6 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <input type="text" placeholder="Nome" class="w-full p-2 mb-4 border rounded">
+            <input type="email" placeholder="E-mail" class="w-full p-2 mb-4 border rounded">
+            <textarea placeholder="Mensagem" class="w-full p-2 mb-4 border rounded"></textarea>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded">Enviar</button>
+        </form>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="bg-orange-500 text-white text-center p-4">
+        &copy; 2025 PetShop Amigo - Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Script básico para mensagem de envio do formulário
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Mensagem enviada com sucesso!");
+        });
+    </script>
+    
+</body>
+</html>
